@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text1"
+        android:layout_width="207dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="-490dp"
+        android:text="Fill in your bio to get started "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Text2"
+        android:layout_width="330dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="-560dp"
+        android:text="The data will be displayed in your acount profile of security."
+        android:textColor="#0E0E0E"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/name"
+        android:layout_width="333dp"
+        android:layout_height="36dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/shape"
+        android:gravity="start|center_vertical"
+        android:text=" First Name"
+        android:paddingStart="20dp"
+        android:textColor="#FF3D00"
+        app:layout_constraintTop_toTopOf="@+id/Text2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="23dp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/last"
+        android:layout_width="333dp"
+        android:layout_height="36dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/shape"
+        android:gravity="start|center_vertical"
+        android:text=" Last Name"
+        android:paddingStart="20dp"
+        android:textColor="#FF3D00"
+        app:layout_constraintTop_toTopOf="@+id/name"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="23dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/mobile"
+        android:layout_width="333dp"
+        android:layout_height="36dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/shape"
+        android:gravity="start|center_vertical"
+        android:paddingStart="20dp"
+        android:text=" Mobile Number"
+        android:textColor="#FF3D00"
+        app:layout_constraintTop_toTopOf="@+id/last"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="23dp" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/add"
+        android:layout_width="333dp"
+        android:layout_height="36dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/shape"
+        android:gravity="start|center_vertical"
+        android:paddingStart="20dp"
+        android:text=" Address"
+        android:textColor="#FF3D00"
+        app:layout_constraintTop_toTopOf="@+id/mobile"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="23dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="130dp"
+        android:layout_marginTop="-160dp"
+        android:background="@drawable/login"
+        android:paddingStart="10dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/add"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="@+id/add"
+        app:layout_constraintTop_toTopOf="@+id/add"
+        app:layout_constraintVertical_bias="0.541" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
